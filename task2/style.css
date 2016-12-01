@@ -1,0 +1,29 @@
+table {
+    border: 1px solid #e0e0e0;
+    font-size: 14px;
+    font-family: sans-serif;
+    border-collapse: collapse;
+    color: #616161;
+    background: white;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    line-height: 20px;
+}
+
+th, td {
+    border: 1px solid #e0e0e0;
+    padding: 15px 10px;
+}
+
+th {
+    text-align: left;
+    background-image: -moz-linear-gradient(to bottom, #fff 10%, #ECEFF1);
+    background-image: -webkit-linear-gradient(to bottom, #fff 10%, #ECEFF1);
+    background-image: -o-linear-gradient(to bottom, #fff 10%, #ECEFF1);
+    background-image: linear-gradient(to bottom, #fff 10%, #ECEFF1);
+}
+
+code {
+    background-color: rgba(0,0,0,0.08);
+}

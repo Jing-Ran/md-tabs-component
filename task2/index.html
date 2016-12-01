@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Mastering CSS: Tabs Component Task2">
+    <title>Project Assignment: Tabs Component Task1</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <table>
+        <thead>
+        <tr>
+            <th width="10%">Selector #</th>
+            <th width="15%">CSS Selector</th>
+            <th>Explanation</th>
+            <th width="15%">Purpose</th>
+            <th>HTML element(s) selected</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td><code>.tabComponent</code></td>
+            <td>The class selector <code>.tabComponent</code> selects any element with <code>class="tabComponent"</code>.</td>
+            <td>To apply style rules to elements with class <code>.tabComponent</code></td>
+            <td>The outmost <code>div</code> element with <code>class="tabComponent"</code>, which works as a tab container.</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td><code>div.tabComponent input</code></td>
+            <td>The type selector <code>div</code> is combined with the class selector <code>.tabComponent</code> to select the outermost <code>div</code> with <code>class="tabComponent"</code>. This composite selector is then combined with another type selector <code>input</code> to select all the <code>input</code> type elements.</td>
+            <td>To apply style rules to the radio button input type elements</td>
+            <td>Elements selected by this rule are the radio buttons with <code>id="homeDecor"</code>, <code>id="furniture"</code> and <code>id="kitchen"</code>.</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td><code>div.tabComponent label</code></td>
+            <td>The composite selector <code>div.tabComponent label</code> selects all labels.</td>
+            <td>To apply style rules to all label elements</td>
+            <td>Elements selected by this rule are <code>label</code>s.</td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td><code>div.tabComponent label:hover</code></td>
+            <td>The pseudo-class selector <code>:hover</code> works with the <code>div.tabComponent label</code> selector to find the hovered label.</td>
+            <td>To apply style rules to hovered label element</td>
+            <td>Elements selected by this rule are only hovered <code>label</code>s.</td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td><code>.tab-content</code></td>
+            <td>The class selector <code>.tab-content</code> matches all elements with class <code>.tab-content</code>.</td>
+            <td>To apply style rules to elements with class <code>.tab-content</code></td>
+            <td>Elements selected by this rule are the <code>div</code>s placed right after each label element and with <code>class="tab-content"</code>.</td>
+        </tr>
+
+        <tr>
+            <td>6</td>
+            <td><code>div.tabComponent input:checked + label</code></td>
+            <td>The composite selector <code>div.tab-content</code> matches the outmost <code>div</code> element. The pseudo-class selector <code>:checked</code> combined with type selector <code>input</code> finds the checked radio button element. The following combinator <code>+</code> working with type selector <code>label</code> selects the label element, which is the adjacent sibling of the checked input element.</td>
+            <td>To apply style rules to the label element which is the adjacent sibling of a checked input element</td>
+            <td>The element selected by this rule is the label of a check radio button with <code>id="homeDecor"</code>, <code>id="furniture"</code> or <code>id="kitchen"</code>.</td>
+        </tr>
+
+        <tr>
+            <td>7</td>
+            <td><code>div.tabComponent input:nth-of-type(n):checked ~ .tab-content:nth-of-type(n)</code></td>
+            <td>The pseudo-class <code>:nth-of-type(n)</code> selects the nth given element of its type. The composite selector <code>input:nth-of-type(n):checked</code> matches the nth input of its type if it's checked. The following combinator <code>~</code> selects the specified following siblings of the input element. <code>.tab-content:nth-of-type(n)</code> matches the nth element with class <code>.tab-content</code> of its type.</td>
+            <td>To apply style rules to the nth element with class <code>.tab-content</code> when nth input is checked</td>
+            <td>Element selected by this rule is specified by n.</td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>
