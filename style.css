@@ -11,6 +11,7 @@ body {
   width: 800px;
   min-height: 150px;
   border: 1px solid lightgray;
+  background-color: #fff;
 }
 
 .tabComponent input {
@@ -36,16 +37,16 @@ body {
 }
 
 .tabs label {
-  padding: 20px 0;
+  padding: 25px 0 20px;
   text-align: center;
   text-transform: uppercase;
   margin: 0;
   cursor: pointer;
 
-  -webkit-transition: color 0.5s, border-bottom-color 0.5s;
-  -moz-transition: color 0.5s, border-bottom-color 0.5s;
-  -o-transition: color 0.5s, border-bottom-color 0.5s;
-  transition: color 0.5s, border-bottom-color 0.5s;
+  -webkit-transition: color 0.3s, border-bottom-color 0.3s;
+  -moz-transition: color 0.3s, border-bottom-color 0.3s;
+  -o-transition: color 0.3s, border-bottom-color 0.3s;
+  transition: color 0.3s, border-bottom-color 0.3s;
 
   -webkit-transition-timing-function: ease-out;
   -moz-transition-timing-function: ease-out;
@@ -67,9 +68,10 @@ body {
 
 .tab-content {
   margin: 0 15px 15px;
-  padding: 20px;
+  padding: 15px 20px 0;
   display: none;
   max-height: 200px;
+  height: 100px;
   color: rgba(0,0,0,0.7);
   background-color: rgba(38,198,218,0.2);
 }
@@ -118,6 +120,7 @@ body {
   }
 
   .tabs-sm-screen label {
+    padding: 20px 0;
     border-top: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
     width: 100%;
@@ -132,11 +135,11 @@ body {
     max-height: 0;
     overflow-y: hidden;
 
-    -webkit-transition: max-height 0.5s, padding-top 0.5s, padding-bottom 0.5s;
-    -moz-transition: max-height 0.5s, padding-top 0.5s, padding-bottom 0.5s;
-    -ms-transition: max-height 0.5s, padding-top 0.5s, padding-bottom 0.5s;
-    -o-transition: max-height 0.5s, padding-top 0.5s, padding-bottom 0.5s;
-    transition: max-height 0.5s, padding-top 0.5s, padding-bottom 0.5s;
+    -webkit-transition: max-height 0.3s, padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: max-height 0.3s, padding-top 0.3s, padding-bottom 0.3s;
+    -ms-transition: max-height 0.3s, padding-top 0.3s, padding-bottom 0.3s;
+    -o-transition: max-height 0.3s, padding-top 0.3s, padding-bottom 0.3s;
+    transition: max-height 0.3s, padding-top 0.3s, padding-bottom 0.3s;
   }
 
   .tabComponent input:nth-of-type(1):checked ~ .tabs-sm-screen-decor label,
